@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Ligth Portfolio</title>
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet"
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class = "logo" alt="freepik.com">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon" alt="flatincon">
+        </nav>
+        <div class="info">
+            <h1>I'm <span>Jon Doe</span> Dev </h1>
+            <p> This is my official portfolio website to showcase my all
+                works related to web <br>development HTML/Reac Native and 3D Animations.</p>
+                <a href="">Download CV</a>
+            
+        </div>
+        <div class='img-box'>
+            <img src="images/people.png" class="main-img" alt="freepik">   
+        </div>
+        <div>
+
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
